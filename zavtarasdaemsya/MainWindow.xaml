@@ -23,7 +23,17 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label Grid.ColumnSpan="5" Content="Задание по ВЭБ" FontSize="30" HorizontalAlignment="Center" Foreground="DarkSlateBlue" FontFamily="ScriptS" />
-
+        <Label Grid.ColumnSpan="5" Content="Задание по ВЭБ" FontSize="30" HorizontalAlignment="Center" Foreground="DarkSlateBlue" FontFamily="ScriptS"/>
+        <ListView Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="5" Background="Thistle" ItemsSource="{Binding Students}" SelectedItem="{Binding Student}" BorderThickness="0">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Фамилия" DisplayMemberBinding="{Binding LastName}" />
+                    <GridViewColumn Header="Имя" DisplayMemberBinding="{Binding FirstName}"/>
+                    <!--<GridViewColumn Header="Имя" DisplayMemberBinding="{Binding FirstName}"/>-->
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Grid.Row="6" Grid.Column="2" Content="Добавить студента" Background="Thistle" FontSize="15" HorizontalAlignment="Center"
+                Foreground="DarkSlateBlue" FontFamily="ScriptS" BorderBrush="DarkSlateBlue" Click="AddStudentWin"/>
     </Grid>
 </Window>

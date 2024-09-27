@@ -12,7 +12,7 @@ namespace zavtarasdaemsya
         public string FirstName { get; set; } = null!;
         public string LastName { get; set; } = null!;
 
-        public int TaskId { get; set; }
-        public Task Task { get; set; }
+        public int? TaskId { get; set; } = null;
+        public Task Task { get; set; } = null;
     }
 }
