@@ -1,0 +1,30 @@
+﻿<Window x:Class="zavtarasdaemsya.AddTaskWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:zavtarasdaemsya"
+        mc:Ignorable="d"
+        Title="AddTaskWin" Height="450" Width="800" Background="Thistle">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Введите название задания" Grid.Row="1" Grid.ColumnSpan="2" Style="{StaticResource Label}" />
+        <TextBox Text="{Binding Task.Title}" Grid.Row="2" Grid.ColumnSpan="2" Margin="15 0 15 0" Style="{StaticResource TextBox}" />
+        <Label Content="Выберите раздел" Grid.Column="2" Grid.Row="1" Style="{StaticResource Label}" />
+        <ComboBox DisplayMemberPath="Title" ItemsSource="{Binding Razdels}" Grid.Row="2" Grid.Column="2" />
+        <Button Content="Сохранить" Grid.Row="4" Grid.Column="1" Style="{StaticResource Button}" Click="Save"/>
+    </Grid>
+</Window>

@@ -66,5 +66,17 @@ namespace zavtarasdaemsya
             AddStudentWin addStudentWin = new AddStudentWin();
             addStudentWin.Show();
         }
+
+        private void AddTaskWin(object sender, RoutedEventArgs e)
+        {
+            AddTaskWin addTaskWin = new AddTaskWin();
+            addTaskWin.Show();
+        }
+
+        private void AddRazdelWin(object sender, RoutedEventArgs e)
+        {
+            AddRazdelWin addRazdelWin = new AddRazdelWin();
+            addRazdelWin.Show();
+        }
     }
 }

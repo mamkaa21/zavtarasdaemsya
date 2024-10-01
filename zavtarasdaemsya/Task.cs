@@ -11,7 +11,7 @@ namespace zavtarasdaemsya
         public int Id {  get; set; }
         public string Title { get; set; } = null!;
 
-        public int RazdelId { get; set; }
-        public Razdel Razdel { get; set; }
+        public int? RazdelId { get; set; } = null;
+        public Razdel Razdel { get; set; } = null;
     }
 }

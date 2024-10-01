@@ -33,7 +33,8 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Grid.Row="6" Grid.Column="2" Content="Добавить студента" Background="Thistle" FontSize="15" HorizontalAlignment="Center"
-                Foreground="DarkSlateBlue" FontFamily="ScriptS" BorderBrush="DarkSlateBlue" Click="AddStudentWin"/>
+        <Button Grid.Row="6" Grid.Column="1" Content="Добавить студента"  FontSize="15" Style="{StaticResource Button}" Click="AddStudentWin" />
+        <Button Grid.Row="6" Grid.Column="2" Content="Добавить раздел"  FontSize="15" Style="{StaticResource Button}" Click="AddRazdelWin" />
+        <Button Grid.Row="6" Grid.Column="3" Content="Добавить задание" FontSize="15" Style="{StaticResource Button}" Click="AddTaskWin" />
     </Grid>
 </Window>

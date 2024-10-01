@@ -23,18 +23,12 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label Grid.ColumnSpan="5" Content="Добавить студента" FontSize="30" HorizontalAlignment="Center" Foreground="DarkSlateBlue" FontFamily="ScriptS"/>
-        <Label Grid.Row="2" Grid.Column="1" Content="Фамилия:" FontSize="23" 
-              VerticalAlignment="Bottom" HorizontalAlignment="Left" Foreground="DarkSlateBlue" FontFamily="ScriptS"/>
-        <TextBox Grid.Row="2" Grid.Column="2" Text="{Binding Student.LastName}" FontSize="23"  VerticalAlignment="Bottom"
-                 Background="Thistle" Foreground="DarkSlateBlue" FontFamily="ScriptS" BorderBrush="DarkSlateBlue" BorderThickness="0 0 0 1"/>
-        <Label Grid.Row="3" Grid.Column="1" Content="Имя:" FontSize="23"  VerticalAlignment="Bottom"
-               HorizontalAlignment="Left" Foreground="DarkSlateBlue" FontFamily="ScriptS"/>
-        <TextBox Grid.Row="3" Grid.Column="2" Text="{Binding Student.FirstName}" FontSize="23" 
-                  VerticalAlignment="Bottom" BorderBrush="DarkSlateBlue" BorderThickness="0 0 0 1"
-                 Background="Thistle" Foreground="DarkSlateBlue" FontFamily="ScriptS"/>
-        <Button Grid.Row="5" Grid.Column="2" Content="Добавить" FontSize="30" HorizontalAlignment="Center" 
-                Background="Thistle" Foreground="DarkSlateBlue" FontFamily="ScriptS" BorderBrush="DarkSlateBlue" Click="AddStudent"/>
+        <Label Grid.ColumnSpan="5" Content="Добавить студента"  HorizontalAlignment="Center" Style="{StaticResource Label}"/>
+        <Label Grid.Row="2" Grid.Column="1" Content="Фамилия:" Style="{StaticResource Label}" />
+        <TextBox Grid.Row="2" Grid.Column="2" Text="{Binding Student.LastName}" Style="{StaticResource TextBox}"/>
+        <Label Grid.Row="3" Grid.Column="1" Content="Имя:" Style="{StaticResource Label}"/>
+        <TextBox Grid.Row="3" Grid.Column="2" Text="{Binding Student.FirstName}" Style="{StaticResource TextBox}"/>
+        <Button Grid.Row="5" Grid.Column="2" Content="Добавить" Style="{StaticResource Button}" Click="AddStudent"/>
 
     </Grid>
 </Window>
